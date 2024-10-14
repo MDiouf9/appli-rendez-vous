@@ -1,0 +1,44 @@
+plugins {
+    id "com.android.application"
+    // START: FlutterFire Configuration
+    id 'com.google.gms.google-services'
+    // END: FlutterFire Configuration
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.new_dance"
+    compileSdk = 34 // Mettre à jour ici à la version 34
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.example.new_dance"
+        minSdkVersion 23 // Assure-toi que cela est correct
+        targetSdkVersion 34 // Assure-toi que cela est également mis à jour
+        versionCode flutterVersionCode.toInteger() // Assurez-vous que cela est correctement défini
+        versionName flutterVersionName // Assurez-vous que cela est correctement défini
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true // Active le rétrécissement du code
+            shrinkResources true // Active la suppression des ressources inutilisées
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}

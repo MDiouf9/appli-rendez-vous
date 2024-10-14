@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "266915764306",
+    "project_id": "yobante1",
+    "storage_bucket": "yobante1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266915764306:android:0f0e92c2d13aa83f0b278b",
+        "android_client_info": {
+          "package_name": "com.example.new_dance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4jZA5ez7Y1t-_F8aZEl40qgnGkc8NdoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266915764306:android:7a42836e585a016a0b278b",
+        "android_client_info": {
+          "package_name": "com.example.yobante"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4jZA5ez7Y1t-_F8aZEl40qgnGkc8NdoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
